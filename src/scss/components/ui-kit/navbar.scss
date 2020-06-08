@@ -1,3 +1,10 @@
-.header_navbar--list{
-  background-color: blue;
+.header_navbar--list,
+.header_navbar--list:visited,
+.header_navbar--list:active,
+.header_navbar--list_item{
+  background-color: forestgreen;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  list-style: none;
 }
