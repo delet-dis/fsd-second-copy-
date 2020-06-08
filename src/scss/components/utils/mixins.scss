@@ -1,8 +1,8 @@
-@import "src/scss/components/utils/global-vars.scss";
-@import "src/scss/components/utils/fonts.scss";
+@import "../utils/global-vars.scss";
+
 
 @mixin h1 {
-  @include quickSand_regular;
+  font-family: Quicksand;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
