@@ -1,10 +1,11 @@
-@import "utils/global_vars.scss";
+@import "src/scss/components/utils/_global-vars.scss";
+@import "src/scss/components/utils/fonts.scss";
 
 @mixin h1 {
-  font-family: Quicksand;
+  @include quickSand_regular;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;
-  color:$darkShade100;
+  color: $darkShade100;
 }

@@ -1,3 +1,4 @@
+@import "src/scss/components/utils/mixins.scss";
 .header_navbar--list,
 .header_navbar--list:visited,
 .header_navbar--list:active,
@@ -7,4 +8,7 @@
   text-decoration: none;
   text-transform: uppercase;
   list-style: none;
+}
+h1{
+  @include h1;
 }
