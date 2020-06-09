@@ -10,9 +10,18 @@
 }
 
 @mixin h2 {
-font-family: Quicksand-Bold;
-font-style: normal;
-font-weight: bold;
-font-size: 19px;
-color: $darkShade100;
+  font-family: Quicksand-Bold;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  color: $darkShade100;
+}
+
+@mixin h3 {
+  font-family: Montserrat-Bold;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: $darkShade100;
 }
