@@ -1,12 +1,18 @@
-@mixin one-text($content,$font-size) {
+@import "src/scss/components/utils/global-vars.scss";
+
+@mixin one-text($number,$content,$font-size) {
   .one-text{
     margin-top:50px;
     &::before{
-        content: $content;
         position: absolute;
-        margin-left: -59px;
+        margin-left: -57px;
         font-family: Montserrat-Normal;
-        font-size: $font-size + px;
+        text-align: right;
+        color:$darkShade25;
+    }
+    &:nth-of-type(#{$number})::before {
+      font-size: $font-size + px;
+      content:$content;
     }
   }
 }
