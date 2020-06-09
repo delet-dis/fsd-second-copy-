@@ -1,5 +1,5 @@
 @import "src/scss/components/utils/mixins.scss";
-
+@import "../utils/global-vars.scss";
 h1{
   @include h1;
 }
@@ -11,4 +11,28 @@ h3{
 }
 p{
   @include p;
+}
+
+.logo-kit{
+  margin:30px 30px;
+}
+.colors-palette{
+  margin: 67px 0 0 150px;
+  .one-color{
+    display: block;
+    .color-name,
+    .color-description{
+      margin-left: 110px;
+    }
+    &::before{
+      content: "";
+      display: block;
+      position: fixed;
+      margin-right: 40px;
+      width:70px;
+      height: 70px;
+      background-color: $darkShade100;
+      border-radius: 6px;
+  }
+}
 }
