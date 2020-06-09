@@ -23,10 +23,11 @@ p {
   @include p-light;
 }
 
-.containter{
-  width:auto;
+.containter {
+  width: auto;
   margin: 0 autol
 }
+
 .logo-kit {
   margin: 30px 30px;
 }
@@ -42,11 +43,12 @@ p {
   @include one-color(6, $purple);
   @include one-color(7, $green);
 }
-.text-palette{
+
+.text-palette {
   float: right;
-  margin:95px 102px 1px 0;
-  @include one-text(1,'H1',24);
-  @include one-text(2,'H2',19);
-  @include one-text(3,'H3',12);
-  @include one-text(4,'Body',14)
+  margin: 95px 102px 1px 0;
+  @include one-text(1, 'H1', 24);
+  @include one-text(2, 'H2', 19);
+  @include one-text(3, 'H3', 12);
+  @include one-text(4, 'Body', 14)
 }
