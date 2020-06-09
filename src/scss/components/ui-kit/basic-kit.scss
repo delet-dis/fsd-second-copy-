@@ -2,31 +2,42 @@
 @import "src/scss/components/utils/global-vars.scss";
 @import "one-color.scss";
 
-h1{
+
+h1 {
   @include h1;
 }
-h2{
+
+h2 {
   @include h2;
 }
-h3{
+
+h3 {
   @include h3;
 }
-p{
+
+p {
   @include p;
 }
-.p-light{
+
+.p-light {
   @include p-light;
 }
-.logo-kit{
-  margin:30px 30px;
+.containter{
+  width:auto;
+  margin: 0 autol
 }
-.colors-palette{
+.logo-kit {
+  margin: 30px 30px;
+}
+
+.colors-palette {
   margin: 33px 0 0 149px;
-  @include one-color(1,$darkShade100);
-  @include one-color(2,$darkShade75);
-  @include one-color(3,$darkShade50);
-  @include one-color(4,$darkShade25);
-  @include one-color(5,$darkShade5);
-  @include one-color(6,$purple);
-  @include one-color(7,$green);
+  padding-bottom: 145px;
+  @include one-color(1, $darkShade100);
+  @include one-color(2, $darkShade75);
+  @include one-color(3, $darkShade50);
+  @include one-color(4, $darkShade25);
+  @include one-color(5, $darkShade5);
+  @include one-color(6, $purple);
+  @include one-color(7, $green);
 }
