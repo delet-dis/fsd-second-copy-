@@ -1,0 +1,12 @@
+@mixin one-text($content,$font-size) {
+  .one-text{
+    margin-top:50px;
+    &::before{
+        content: $content;
+        position: absolute;
+        margin-left: -59px;
+        font-family: Montserrat-Normal;
+        font-size: $font-size + px;
+    }
+  }
+}
