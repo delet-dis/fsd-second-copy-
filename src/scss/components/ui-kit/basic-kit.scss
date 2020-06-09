@@ -12,17 +12,30 @@ h3{
 p{
   @include p;
 }
-
+.p-light{
+  @include p-light;
+}
 .logo-kit{
   margin:30px 30px;
 }
 .colors-palette{
-  margin: 67px 0 0 150px;
+  margin: 33px 0 0 150px;
   .one-color{
-    display: block;
+    margin-top:20px;
+    .color-name{
+      padding-top:9px ;
+      padding-bottom:15px;
+      margin-bottom: 0px;
+    }
+    .color-description{
+      padding:0;
+      margin:0;
+      margin-top:-10px;
+    }
     .color-name,
     .color-description{
       margin-left: 110px;
+      vertical-align: middle;
     }
     &::before{
       content: "";
