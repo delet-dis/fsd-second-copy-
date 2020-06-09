@@ -47,6 +47,7 @@ p {
 .text-palette {
   float: right;
   margin: 95px 102px 1px 0;
+  width:336px;
   @include one-text(1, 'H1', 24);
   @include one-text(2, 'H2', 19);
   @include one-text(3, 'H3', 12);

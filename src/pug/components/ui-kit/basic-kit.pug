@@ -1,36 +1,18 @@
-
-
+include one-color.pug
+include one-text.pug
 div.container
   img(src="../static/vectors/logo-inactive.svg").logo-kit
   div.text-palette
-      div.one-text
-        h1.text-content This one is the sub-section or <br> widget title
-      div.one-text
-        h2.text-content Next one is the item title inside <br> widgets
-      div.one-text
-        h3.text-content This is a label or CTA text
-      div.one-text
-        p.text-content This is the body text which is used for most <br> of the design, like paragraphs, lists, etc.
+    +one-text_h1('This one is the sub-section or widget title')
+    +one-text_h2('Next one is the item title inside widgets')
+    +one-text_h3('This is a label or CTA text')
+    +one-text_p('This is the body text which is used for most of the design, like paragraphs, lists, etc.')
   div.colors-palette
-    div.one-color
-      h2.color-name Dark Shade 100%
-      p.color-description.p-light #1f2041
-    div.one-color
-      h2.color-name Dark Shade 75%
-      p.color-description.p-light #1f2041
-    div.one-color
-      h2.color-name Dark Shade 50%
-      p.color-description.p-light #1f2041
-    div.one-color
-      h2.color-name Dark Shade 25%
-      p.color-description.p-light #1f2041
-    div.one-color
-      h2.color-name Dark Shade 5%
-      p.color-description.p-light #1f2041
-    div.one-color
-      h2.color-name Purple
-      p.color-description.p-light #bc9cff
-    div.one-color
-      h2.color-name Green
-      p.color-description.p-light #6fcf97
+    +one-color('Dark Shade 100%', '#1f2041')
+    +one-color('Dark Shade 75%', '#1f2041')
+    +one-color('Dark Shade 50%', '#1f2041')
+    +one-color('Dark Shade 25%', '#1f2041')
+    +one-color('Dark Shade 5%', '#1f2041')
+    +one-color('Purple', '#bc9cff')
+    +one-color('Green', '#6fcf97')
 script(src='../../src/js/components/ui-kit/basic-kit.js')
