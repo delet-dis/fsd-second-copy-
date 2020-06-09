@@ -1,0 +1,33 @@
+@mixin one-color($number,$before-color) {
+  .one-color{
+    margin-top:28px;
+    .color-name{
+      padding-top:9px ;
+      padding-bottom:15px;
+      margin-bottom: 0px;
+    }
+    .color-description{
+      padding:0;
+      margin:0;
+      margin-top:-10px;
+      text-transform: uppercase;
+    }
+    .color-name,
+    .color-description{
+      margin-left: 110px;
+      vertical-align: middle;
+    }
+    &::before{
+      content: "";
+      display: block;
+      position: absolute;
+      margin-right: 40px;
+      width:70px;
+      height: 70px;
+      border-radius: 6px;
+    }
+    &:nth-of-type(#{$number})::before{
+      background-color: $before-color;
+    }
+  }
+}

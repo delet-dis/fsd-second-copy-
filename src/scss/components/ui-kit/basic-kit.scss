@@ -1,5 +1,7 @@
 @import "src/scss/components/utils/mixins.scss";
-@import "../utils/global-vars.scss";
+@import "src/scss/components/utils/global-vars.scss";
+@import "one-color.scss";
+
 h1{
   @include h1;
 }
@@ -19,33 +21,12 @@ p{
   margin:30px 30px;
 }
 .colors-palette{
-  margin: 33px 0 0 150px;
-  .one-color{
-    margin-top:20px;
-    .color-name{
-      padding-top:9px ;
-      padding-bottom:15px;
-      margin-bottom: 0px;
-    }
-    .color-description{
-      padding:0;
-      margin:0;
-      margin-top:-10px;
-    }
-    .color-name,
-    .color-description{
-      margin-left: 110px;
-      vertical-align: middle;
-    }
-    &::before{
-      content: "";
-      display: block;
-      position: fixed;
-      margin-right: 40px;
-      width:70px;
-      height: 70px;
-      background-color: $darkShade100;
-      border-radius: 6px;
-  }
-}
+  margin: 33px 0 0 149px;
+  @include one-color(1,$darkShade100);
+  @include one-color(2,$darkShade75);
+  @include one-color(3,$darkShade50);
+  @include one-color(4,$darkShade25);
+  @include one-color(5,$darkShade5);
+  @include one-color(6,$purple);
+  @include one-color(7,$green);
 }
