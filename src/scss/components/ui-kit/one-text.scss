@@ -5,9 +5,9 @@
     margin-top:50px;
     &::before{
         position: absolute;
-        margin-left: -57px;
+        right:476px;
         font-family: Montserrat-Normal;
-        text-align: right;
+        text-align: left;
         color:$darkShade25;
     }
     &:nth-of-type(#{$number})::before {
