@@ -25,3 +25,11 @@
   text-transform: uppercase;
   color: $darkShade100;
 }
+
+@mixin p {
+  font-family: Montserrat-Normal;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: $darkShade75;
+}
