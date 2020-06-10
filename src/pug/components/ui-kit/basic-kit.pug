@@ -1,5 +1,6 @@
 include one-color.pug
 include one-text.pug
+include one-text-field.pug
 div.container
   img(src="../static/vectors/logo-inactive.svg").logo-kit
   div.text-palette
@@ -18,7 +19,7 @@ div.container
   div.container
     img(src="../static/vectors/logo-inactive.svg").logo-kit
     div.forms-palette
-      div.text-field-container
-        label(for="text-field").text-field-label Text field
-        input(type="text", name="text-field").text-field
+      +one-text-field(1)
+      +one-text-field(2)
+
 script(src='../../src/js/components/ui-kit/basic-kit.js')
