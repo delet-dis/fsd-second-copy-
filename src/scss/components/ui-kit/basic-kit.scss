@@ -25,7 +25,7 @@ p {
 
 .containter {
   width: auto;
-  margin: 0 autol
+  margin: 0 auto;
 }
 
 .logo-kit {
@@ -51,5 +51,33 @@ p {
   @include one-text(1, 'H1', 24);
   @include one-text(2, 'H2', 19);
   @include one-text(3, 'H3', 12);
-  @include one-text(4, 'Body', 14)
+  @include one-text(4, 'Body', 14);
+    &::after{
+      content: "";
+      display: table;
+      clear: both;
+    }
+}
+.forms-palette{
+  margin:60px 141px 130px 141px;
+  .text-field-container{
+    width: 320px;
+    height: 67px;
+    .text-field-label{
+      @include h3;
+      text-transform: uppercase;
+    }
+    .text-field{
+      width: 320px;
+      height:44px;
+      box-sizing: border-box;
+      border-radius: 4px;
+      border:1px solid $darkShade25;
+    }
+    .text-field[type="text"]{
+      @include p;
+      color:$darkShade25;
+      padding:13px 15px;
+    }
+  }
 }
