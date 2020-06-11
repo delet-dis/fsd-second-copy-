@@ -69,4 +69,51 @@ p {
   position: relative;
   top: -178px;
   left: 445px;
+  display:inline-block;
+  .checkbox-buttons{
+    margin-top:15px;
+    .checkbox-container{
+      @include p;
+      margin-top:32px;
+      margin-left:30px;
+      input[type="checkbox"]{
+        position:absolute;
+        width:0;
+        height:0;
+      }
+      .checkmark{
+        position:absolute;
+        margin-left:-134px;
+        margin-top:3px;
+        height:20px;
+        width:20px;
+        border:1px solid $darkShade25;
+        box-sizing: border-box;
+        border-radius: 4px;
+      }
+      .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+      }
+      input[type="checkbox"]:checked ~ .checkmark{
+        border-color:$purple;
+        &::after{
+          display: block;
+        }
+      }
+      .checkmark:after{
+        content:"";
+        left:6px;
+        top:4px;
+        width:4px;
+        height:6px;
+        border: solid;
+        border-image:linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%) round;
+        border-image-slice: 1;
+        border-width:0 2px 2px 0;
+        transform:rotate(45deg);
+      }
+    }
+  }
 }
