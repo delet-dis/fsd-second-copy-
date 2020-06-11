@@ -1,0 +1,1 @@
+import '../../../../scss/components/ui-kit/colors-and-types/one-text.scss';

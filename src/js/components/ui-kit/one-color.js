@@ -1,1 +1,0 @@
-import '../../../scss/components/ui-kit/one-color.scss';
