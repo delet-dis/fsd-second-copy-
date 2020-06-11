@@ -15,6 +15,9 @@
         display: table;
         clear: both;
       }
+      &:hover input ~ .checkmark{
+        border-color:$purple;
+      }
       input[type="checkbox"]{
         position:absolute;
         width:0;

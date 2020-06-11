@@ -70,8 +70,9 @@ p {
   top: -178px;
   left: 445px;
   display:inline-block;
-  .checkbox-buttons{
+  .buttons-section{
     margin-top:18px;
-    @include one-checkbox
+    @include one-checkbox;
+    margin-bottom:50px;
   }
 }
