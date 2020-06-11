@@ -60,8 +60,13 @@ p {
     }
 }
 .forms-palette{
-  margin:29px 141px 130px 141px;
+  margin:29px 0 130px 141px;
   padding:0;
   @include one-text-field(1,"Default");
   @include one-text-field(2,"Hover / Focus")
+}
+.buttons-palette{
+  position: relative;
+  top: -178px;
+  left: 445px;
 }

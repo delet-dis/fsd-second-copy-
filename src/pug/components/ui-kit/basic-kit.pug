@@ -19,7 +19,11 @@ div.container
   div.container
     img(src="../static/vectors/logo-inactive.svg").logo-kit
     div.forms-palette
-      +one-text-field(1)
-      +one-text-field(2)
+      div.text-field-palette
+        +one-text-field(1, Email)
+        +one-text-field(2)
+      div.buttons-palette
+        div.checkbox-buttons
+          h3.section-header Checkbox-buttons
 
 script(src='../../src/js/components/ui-kit/basic-kit.js')
