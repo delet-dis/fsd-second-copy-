@@ -45,3 +45,13 @@
   font-size: 19px;
   color: $darkShade100;
 }
+
+@mixin material-icon-template{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 9px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
