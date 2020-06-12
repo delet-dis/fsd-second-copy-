@@ -29,7 +29,17 @@ div.container
         +one-checkbox('Можно курить')
         +one-checkbox('Можно с питомцами')
         +one-checkbox('Можно пригласить гостей (до 10 человек)')
+      h3.section-header Radio buttons
       div.buttons-section
-        h3.section-header Radio buttons
+        div.radio-buttons-section
+          div.radio-button
+            label.radio-container Мужчина
+              input(type="radio" name="radio")
+              span.radiomark
+          div.radio-button
+            label.radio-container Женщина
+              input(type="radio" name="radio")
+              span.radiomark
+
 
 script(src='../../src/js/components/ui-kit/basic-kit.js')

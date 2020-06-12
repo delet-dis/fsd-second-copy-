@@ -51,7 +51,7 @@
         width:4px;
         height:6px;
         border: solid;
-        border-image:linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%) round;
+        border-image:$stock-gradient round;
         border-image-slice: 1;
         border-width:0 2px 2px 0;
         transform:rotate(45deg);
