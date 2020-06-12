@@ -5,7 +5,7 @@
 @import "form-elements/one-text-field.scss";
 @import "form-elements/one-checkbox.scss";
 @import "form-elements/one-radio.scss";
-
+@import "form-elements/one-toggle.scss";
 h1 {
   @include h1;
 }
@@ -87,5 +87,6 @@ p {
       margin-left: 0;
       @include one-radio;
     }
+    @include one-toggle;
   }
 }

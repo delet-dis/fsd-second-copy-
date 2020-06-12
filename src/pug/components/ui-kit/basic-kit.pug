@@ -3,6 +3,7 @@ include colors-and-types/one-text.pug
 include form-elements/one-text-field.pug
 include form-elements/one-checkbox.pug
 include form-elements/one-radio.pug
+include form-elements/one-toggle.pug
 div.container
   img(src="../static/vectors/logo-inactive.svg").logo-kit
   div.text-palette
@@ -35,5 +36,8 @@ div.container
         div.radio-buttons-section
           +one-radio('Мужчина', 'gender')
           +one-radio('Женщина', 'gender')
+      h3.section-header Toggle
+      div.buttons-section
+        +one-toggle('Получать спецпредложения')
 
 script(src='../../src/js/components/ui-kit/basic-kit.js')
