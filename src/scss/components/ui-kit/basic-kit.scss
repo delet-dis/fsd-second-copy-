@@ -55,31 +55,36 @@ p {
   @include one-text(2, 'H2', 19);
   @include one-text(3, 'H3', 12);
   @include one-text(4, 'Body', 14);
-    &::after{
-      content: "";
-      display: table;
-      clear: both;
-    }
+
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 }
-.forms-palette{
-  margin:29px 0 130px 141px;
-  padding:0;
-  @include one-text-field(1,"Default");
-  @include one-text-field(2,"Hover / Focus")
+
+.forms-palette {
+  margin: 29px 0 130px 141px;
+  padding: 0;
+  @include one-text-field(1, "Default");
+  @include one-text-field(2, "Hover / Focus")
 }
-.buttons-palette{
+
+.buttons-palette {
   position: relative;
   top: -178px;
   left: 445px;
-  display:inline-block;
-  .buttons-section{
-    margin-top:18px;
+  display: inline-block;
+
+  .buttons-section {
+    margin-top: 18px;
     @include one-checkbox;
-    margin-bottom:50px;
-    .radio-buttons-section{
-      display:flex;
-      padding-left:0;
-      margin-left:0;
+    margin-bottom: 50px;
+
+    .radio-buttons-section {
+      display: flex;
+      padding-left: 0;
+      margin-left: 0;
       @include one-radio;
     }
   }
