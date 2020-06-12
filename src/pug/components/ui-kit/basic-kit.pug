@@ -2,6 +2,7 @@ include colors-and-types/one-color.pug
 include colors-and-types/one-text.pug
 include form-elements/one-text-field.pug
 include form-elements/one-checkbox.pug
+include form-elements/one-radio.pug
 div.container
   img(src="../static/vectors/logo-inactive.svg").logo-kit
   div.text-palette
@@ -32,14 +33,7 @@ div.container
       h3.section-header Radio buttons
       div.buttons-section
         div.radio-buttons-section
-          div.radio-button
-            label.radio-container Мужчина
-              input(type="radio" name="radio")
-              span.radiomark
-          div.radio-button
-            label.radio-container Женщина
-              input(type="radio" name="radio")
-              span.radiomark
-
+          +one-radio('Мужчина', 'gender')
+          +one-radio('Женщина', 'gender')
 
 script(src='../../src/js/components/ui-kit/basic-kit.js')
