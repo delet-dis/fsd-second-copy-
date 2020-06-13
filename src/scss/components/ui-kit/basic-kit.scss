@@ -88,32 +88,44 @@ p {
       @include one-radio;
     }
     @include one-toggle;
-    .like-button{
-      position: relative;
-      height:20px;
-      width:40px;
-      border:1px solid;
-      border-radius: 10px;
-      display:flex;
-      outline:none;
-      .icon{
-        @include material-icon-template;
-        display:block;
-        position:absolute;
-        height:20px;
-        width:20px;
-        top:5px;
-        left:-2px;
-      }
-      .button-content{
-        @include p;
-        display:block;
-        font-size: 10px;
-        line-height: 12px;
-        text-align: center;
-        position: absolute;
-        top:-7px;
-        right:4px;
+    .button-container {
+      margin: 10px;
+      font-size: 10px;
+      .heart-block {
+        color: $darkShade25;
+        padding: 3px 5px;
+        border: 1px solid $darkShade25;
+        border-radius: 10px;
+        cursor: pointer;
+        &:before {
+          content: "favorite_border";
+          @include material-icon-template;
+        }
+        &_margin {
+          &:before {
+            margin-right: 10px;
+          }
+        }
+        &_active {
+          color: $purple;
+          &:before {
+            font-weight: 900;
+          }
+        }
+        &_flex {
+          box-sizing: border-box;
+          display: flex;
+          max-width: 40px;
+          justify-content: flex-start;
+          align-self: center;
+          span {
+            flex-grow: 1;
+            text-align: center;
+            @include p;
+            font-size: 10px;
+            line-height: 12px;
+          }
+        }
       }
     }
   }
