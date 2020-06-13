@@ -2,7 +2,7 @@
 
 @mixin one-text($number, $content, $font-size) {
   .one-text {
-    margin-top: 50px;
+    margin-bottom: 50px;
 
     &::before {
       position: absolute;
