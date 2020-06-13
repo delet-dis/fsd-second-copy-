@@ -30,7 +30,14 @@ p {
   width: auto;
   margin: 0 auto;
 }
-
+.colors_types{
+  display:grid;
+  margin:0 auto;
+  padding:0;
+  width:auto;
+  grid-template-columns: 150px 630px 500px;
+  grid-template-rows: 145px 610px 145px;
+}
 .logo-kit {
   margin: 30px 30px;
 }
@@ -88,7 +95,7 @@ p {
       @include one-radio;
     }
     @include one-toggle;
-    .button-container {
+    /*.button-container {
       margin: 10px;
       font-size: 10px;
       .heart-block {
@@ -126,6 +133,6 @@ p {
           }
         }
       }
-    }
+    }*/
   }
 }

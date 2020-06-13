@@ -4,13 +4,8 @@ include form-elements/one-text-field.pug
 include form-elements/one-checkbox.pug
 include form-elements/one-radio.pug
 include form-elements/one-toggle.pug
-div.container
+div.container.colors_types
   img(src="../static/vectors/logo-inactive.svg").logo-kit
-  div.text-palette
-    +one-text_h1('This one is the sub-section or widget title')
-    +one-text_h2('Next one is the item title inside widgets')
-    +one-text_h3('This is a label or CTA text')
-    +one-text_p('This is the body text which is used for most of the design, like paragraphs, lists, etc.')
   div.colors-palette
     +one-color('Dark Shade 100%', '#1f2041')
     +one-color('Dark Shade 75%', '#1f2041')
@@ -19,6 +14,11 @@ div.container
     +one-color('Dark Shade 5%', '#1f2041')
     +one-color('Purple', '#bc9cff')
     +one-color('Green', '#6fcf97')
+  div.text-palette
+    +one-text_h1('This one is the sub-section or widget title')
+    +one-text_h2('Next one is the item title inside widgets')
+    +one-text_h3('This is a label or CTA text')
+    +one-text_p('This is the body text which is used for most of the design, like paragraphs, lists, etc.')
 div.container
   img(src="../static/vectors/logo-inactive.svg").logo-kit
   div.forms-palette
@@ -40,10 +40,10 @@ div.container
       div.buttons-section
         +one-toggle('Получать спецпредложения')
         +one-toggle('Получать спецпредложения')
-      h3.section-header Like button
+      //h3.section-header Like button
         div.buttons-section
           div.button-container
             div.heart-block.heart-block_flex
-              span 9
+              span 9//
 
 script(src='../../src/js/components/ui-kit/basic-kit.js')
