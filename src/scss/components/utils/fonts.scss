@@ -30,8 +30,12 @@
 }
 
 @font-face{
-  font-family: 'Material-Icons';
-  font-weight: normal;
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
   src: url('../../../static/fonts/material_icons/MaterialIcons-Regular.eot');
-  src: url('../../../static/fonts/material_icons/MaterialIcons-Regular.woff') format('woff'), url('../../../static/fonts/material_icons/MaterialIcons-Regular.ttf') format('truetype'), url('../../../static/fonts/material_icons/MaterialIcons-Regular.svg') format('svg');
+  src:
+    url('../../../static/fonts/material_icons/MaterialIcons-Regular.woff2') format('woff2'),
+    url('../../../static/fonts/material_icons/MaterialIcons-Regular.woff') format('woff'),
+    url('../../../static/fonts/material_icons/MaterialIcons-Regular.ttf') format('truetype');
 }

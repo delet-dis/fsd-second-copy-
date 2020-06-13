@@ -96,10 +96,9 @@ p {
         padding: 3px 5px;
         border: 1px solid $darkShade25;
         border-radius: 10px;
-        cursor: pointer;
         &:before {
-          content: "favorite_border";
           @include material-icon-template;
+          content: "book";
         }
         &_margin {
           &:before {
