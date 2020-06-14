@@ -121,6 +121,7 @@ p {
           color: $purple;
           &:before {
             font-weight: 900;
+            color:$stock-gradient;
           }
         }
         &_flex {
