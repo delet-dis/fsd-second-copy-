@@ -97,7 +97,7 @@ p {
       @include one-radio;
     }
     @include one-toggle;
-    /*.button-container {
+    .button-container {
       margin: 10px;
       font-size: 10px;
       .heart-block {
@@ -135,6 +135,6 @@ p {
           }
         }
       }
-    }*/
+    }
   }
 }
