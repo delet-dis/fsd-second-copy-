@@ -13,9 +13,9 @@
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
-    "modern-css-reset": "^1.1.0",
+    "modern-css-reset": "^1.1.1",
     "parcel": "^1.12.4",
     "pug": "^3.0.0",
-    "sass": "^1.26.8"
+    "sass": "^1.26.10"
   }
 }
